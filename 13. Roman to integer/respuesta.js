@@ -11,7 +11,7 @@ var replaceNumber = function (letra) {
 };
 function romanToInt(s) {
     var suma = 0;
-    for (var i = 1; i < s.length; i++) {
+    for (var i = 0; i < s.length; i++) {
         var actual = replaceNumber(s[i]);
         var siguiente = replaceNumber(s[i + 1]);
         if (siguiente && actual < siguiente) {
@@ -23,4 +23,4 @@ function romanToInt(s) {
     }
     return suma;
 }
-console.log(romanToInt("XIV"));
+console.log(romanToInt("MCMXCIV"));

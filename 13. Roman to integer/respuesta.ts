@@ -13,7 +13,7 @@ const replaceNumber = (letra: string): number => {
 
 function romanToInt(s: string): number {
   let suma = 0;
-  for (let i = 1; i < s.length; i++) {
+  for (let i = 0; i < s.length; i++) {
     const actual = replaceNumber(s[i]);
     const siguiente = replaceNumber(s[i + 1]);
 
@@ -26,4 +26,4 @@ function romanToInt(s: string): number {
   return suma;
 }
 
-console.log(romanToInt("XIV"));
+console.log(romanToInt("MCMXCIV"));
