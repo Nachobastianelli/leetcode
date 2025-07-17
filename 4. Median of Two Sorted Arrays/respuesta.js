@@ -32,14 +32,13 @@ var __spreadArray = (this && this.__spreadArray) || function (to, from, pack) {
 //   return avg;
 // }
 function findMedianSortedArrays(nums1, nums2) {
-    var arrayMerged = __spreadArray(__spreadArray([], nums1, true), nums2, true).sort(function (a, b) { return a - b; });
-    console.log(arrayMerged);
-    var n = arrayMerged.length;
-    console.log(n);
+    var nums = __spreadArray(__spreadArray([], nums1, true), nums2, true).sort(function (a, b) { return a - b; });
+    var n = nums.length;
     if (n % 2 !== 0)
-        return arrayMerged[Math.floor(n / 2)];
-    return arrayMerged[n / 2 - 1] + arrayMerged[n / 2] / 2;
+        return nums[Math.floor(n / 2)];
+    return (nums[n / 2 - 1] + nums[n / 2]) / 2;
 }
+//Explicacion: Mezclo los dos arrays y lo ordeno en la misma linea, despues me fijo si es impar usando el resto de la devision por dos, si es impar devuelvo el numero del medio del arreglo y si es par tomo los dos numeros del medio del arreglo, los sumo y despues lo divido a dos.
 var nums1 = [1, 3];
 var nums2 = [2];
 console.log(findMedianSortedArrays(nums1, nums2));
