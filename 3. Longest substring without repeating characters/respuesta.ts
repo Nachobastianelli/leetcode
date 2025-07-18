@@ -19,6 +19,9 @@ function lengthOfLongestSubstring(s: string): number {
   return maxLen;
 }
 
+// let nums1 = [2, 3, 5, 1, 6, 7, 1, 2, 0];
+// let k1 = 3;
+
 // function maxSum(nums: number[], k: number): number {
 //   let sum = 0;
 //   for (let i = 0; i < k; i++) {
@@ -34,8 +37,5 @@ function lengthOfLongestSubstring(s: string): number {
 
 //   return max;
 // }
-
-// let nums1 = [2, 3, 5, 1, 6, 7, 1, 2, 0];
-// let k1 = 3;
 
 // console.log(maxSum(nums1, k1));

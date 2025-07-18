@@ -42,6 +42,7 @@ function arrayToList(arr: number[]): ListNode | null {
 
 const l1 = arrayToList([9, 9, 9, 9, 9, 9, 9]);
 const l2 = arrayToList([9, 9, 9, 9]);
+//[8,9,9,9,0,0,1]
 
 const resultado = addTwoNumbers(l1, l2);
 
